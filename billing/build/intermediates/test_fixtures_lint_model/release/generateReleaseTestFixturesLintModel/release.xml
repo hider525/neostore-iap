@@ -1,0 +1,29 @@
+<variant
+    name="release"
+    package="com.neostudio.billing"
+    minSdkVersion="24"
+    targetSdkVersion="37.0"
+    mergedManifest="build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml"
+    manifestMergeReport="build\outputs\logs\manifest-merger-release-report.txt"
+    partialResultsDir="build\intermediates\test_fixtures_lint_partial_results\release\lintAnalyzeReleaseTestFixtures\out">
+  <buildFeatures/>
+  <sourceProviders>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+    <sourceProvider
+        manifests="src\testFixtures\AndroidManifest.xml"
+        javaDirectories="src\testFixtures\java;src\testFixturesRelease\java;src\testFixtures\kotlin;src\testFixturesRelease\kotlin"
+        assetsDirectories="src\testFixtures\assets;src\testFixturesRelease\assets"
+        keepRulesDirectories="src\testFixtures\keepRules;src\testFixturesRelease\keepRules"
+        testFixture="true"/>
+  </testFixturesSourceProviders>
+  <artifact
+      classOutputs="build\intermediates\javac\releaseTestFixtures\compileReleaseTestFixturesJavaWithJavac\classes;build\intermediates\built_in_kotlinc\releaseTestFixtures\compileReleaseTestFixturesKotlin\classes"
+      type="TEST_FIXTURES"
+      applicationId="com.neostudio.billing.testFixtures"
+      generatedSourceFolders="build\generated\ap_generated_sources\releaseTestFixtures\out"
+      desugaredMethodsFiles="C:\Users\Admin\.gradle\caches\9.3.1\transforms\edac13fad0b0362a38312c74fdc6b61b\workspace\transformed\D8BackportedDesugaredMethods.txt">
+  </artifact>
+</variant>

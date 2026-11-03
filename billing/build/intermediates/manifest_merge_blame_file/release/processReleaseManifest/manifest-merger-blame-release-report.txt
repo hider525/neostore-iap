@@ -1,0 +1,16 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.neostudio.billing" >
+4
+5    <uses-sdk android:minSdkVersion="24" />
+5-->INJECTED
+5-->INJECTED
+6
+7    <queries>
+7-->C:\Users\Admin\Desktop\NeoStore\SDKs\IAP\billing\src\main\AndroidManifest.xml:2:5-4:15
+8        <package android:name="com.neostudio.neostore" />
+8-->C:\Users\Admin\Desktop\NeoStore\SDKs\IAP\billing\src\main\AndroidManifest.xml:3:9-58
+8-->C:\Users\Admin\Desktop\NeoStore\SDKs\IAP\billing\src\main\AndroidManifest.xml:3:18-55
+9    </queries>
+10
+11</manifest>

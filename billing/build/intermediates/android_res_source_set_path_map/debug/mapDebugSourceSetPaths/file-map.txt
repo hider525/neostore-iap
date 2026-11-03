@@ -1,0 +1,8 @@
+com.neostudio.billing-pngs-0 C:\Users\Admin\Desktop\NeoStore\SDKs\IAP\billing\build\generated\res\pngs\debug
+com.neostudio.billing-updated_navigation_xml-1 C:\Users\Admin\Desktop\NeoStore\SDKs\IAP\billing\build\generated\updated_navigation_xml\debug
+com.neostudio.billing-mergeDebugResources-2 C:\Users\Admin\Desktop\NeoStore\SDKs\IAP\billing\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.neostudio.billing-mergeDebugResources-3 C:\Users\Admin\Desktop\NeoStore\SDKs\IAP\billing\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.neostudio.billing-debug-4 C:\Users\Admin\Desktop\NeoStore\SDKs\IAP\billing\build\intermediates\merged_res\debug\mergeDebugResources
+com.neostudio.billing-debug-5 C:\Users\Admin\Desktop\NeoStore\SDKs\IAP\billing\build\intermediates\packaged_res\debug\packageDebugResources
+com.neostudio.billing-debug-6 C:\Users\Admin\Desktop\NeoStore\SDKs\IAP\billing\src\debug\res
+com.neostudio.billing-main-7 C:\Users\Admin\Desktop\NeoStore\SDKs\IAP\billing\src\main\res

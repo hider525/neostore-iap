@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 9.1.1" type="incidents">
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.activity:activity-ktx than 1.10.1 is available: 1.13.0">
+        <fix-replace
+            description="Change to 1.13.0"
+            family="Update versions"
+            oldString="1.10.1"
+            replacement="1.13.0"
+            priority="0"/>
+        <location
+            file="${:billing*projectDir}/build.gradle.kts"
+            line="36"
+            column="9"
+            startOffset="663"
+            endLine="36"
+            endColumn="48"
+            endOffset="702"/>
+    </incident>
+
+    <incident
+        id="NewerVersionAvailable"
+        severity="warning"
+        message="A newer version of org.jetbrains.kotlinx:kotlinx-coroutines-android than 1.10.2 is available: 1.11.0">
+        <fix-replace
+            description="Change to 1.11.0"
+            family="Update versions"
+            oldString="1.10.2"
+            replacement="1.11.0"
+            priority="0"/>
+        <location
+            file="${:billing*projectDir}/build.gradle.kts"
+            line="37"
+            column="20"
+            startOffset="723"
+            endLine="37"
+            endColumn="77"
+            endOffset="780"/>
+    </incident>
+
+    <incident
+        id="NewerVersionAvailable"
+        severity="warning"
+        message="A newer version of org.json:json than 20250517 is available: 20260814">
+        <fix-replace
+            description="Change to 20260814"
+            family="Update versions"
+            oldString="20250517"
+            replacement="20260814"
+            priority="0"/>
+        <location
+            file="${:billing*projectDir}/build.gradle.kts"
+            line="40"
+            column="24"
+            startOffset="851"
+            endLine="40"
+            endColumn="48"
+            endOffset="875"/>
+    </incident>
+
+</incidents>

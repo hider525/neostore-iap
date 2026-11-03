@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.neostudio.billing-release-19:/layout-v21/notification_action_tombstone.xml",
+        "source": "com.neostudio.billing-core-1.13.0-0:/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "com.neostudio.billing-release-19:/layout-v21/notification_template_custom_big.xml",
+        "source": "com.neostudio.billing-core-1.13.0-0:/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "com.neostudio.billing-release-19:/layout-v21/notification_template_icon_group.xml",
+        "source": "com.neostudio.billing-core-1.13.0-0:/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "com.neostudio.billing-release-19:/layout-v21/notification_action.xml",
+        "source": "com.neostudio.billing-core-1.13.0-0:/layout-v21/notification_action.xml"
+    }
+]

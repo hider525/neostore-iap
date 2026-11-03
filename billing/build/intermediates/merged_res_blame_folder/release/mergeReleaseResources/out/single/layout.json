@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.neostudio.billing-release-19:/layout/ime_secondary_split_test_activity.xml",
+        "source": "com.neostudio.billing-core-1.13.0-0:/layout/ime_secondary_split_test_activity.xml"
+    },
+    {
+        "merged": "com.neostudio.billing-release-19:/layout/custom_dialog.xml",
+        "source": "com.neostudio.billing-core-1.13.0-0:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "com.neostudio.billing-release-19:/layout/notification_template_part_chronometer.xml",
+        "source": "com.neostudio.billing-core-1.13.0-0:/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "com.neostudio.billing-release-19:/layout/notification_template_part_time.xml",
+        "source": "com.neostudio.billing-core-1.13.0-0:/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "com.neostudio.billing-release-19:/layout/ime_base_split_test_activity.xml",
+        "source": "com.neostudio.billing-core-1.13.0-0:/layout/ime_base_split_test_activity.xml"
+    }
+]
