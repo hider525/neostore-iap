@@ -3,3 +3,6 @@ CHANGELOG.md
 .gradle/
 .idea/
 .kotlin/
+**/build/
+local.properties
+*.iml

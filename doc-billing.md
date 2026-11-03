@@ -59,13 +59,37 @@ implementation("androidx.activity:activity-ktx:1.10.1")
 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
 ```
 
-Для хост-приложения в этом репозитории SDK подключается как `implementation(project(":billing"))`. Release AAR после сборки находится в `billing/build/outputs/aar/billing-release.aar`. Gradle Maven publication настроена с координатами:
+SDK публикуется через JitPack из отдельного GitHub-репозитория `hider525/neostore-iap`. Файлы этого проекта должны находиться в корне этого репозитория, а не во вложенном каталоге другого проекта. После push репозитория и Git-тега `0.1` добавьте JitPack в `settings.gradle.kts` приложения:
 
-```text
-com.neostudio:neostore-billing:1.0.0
+```kotlin
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+    }
+}
 ```
 
-Версию AAR и опубликованные координаты следует согласовывать с командой, поставляющей библиотеку.
+Затем добавьте зависимость в Gradle-модуль Android-приложения:
+
+```kotlin
+dependencies {
+    implementation("com.github.hider525:neostore-iap:0.1")
+}
+```
+
+Для Groovy DSL:
+
+```groovy
+dependencies {
+    implementation 'com.github.hider525:neostore-iap:0.1'
+}
+```
+
+Последняя часть координат (`0.1`) — Git-тег релиза. Тег должен указывать на commit, содержащий Gradle Wrapper и `jitpack.yml`; существующий тег на старом commit нужно переместить или выпустить новый тег, например `0.1.1`. В `jitpack.yml` настроена Java 17 и публикация `:billing` в локальный Maven-репозиторий сборочной среды JitPack. Команда запускает wrapper через `sh`, поэтому исполняемый бит скрипта не требуется. Локальный Release AAR находится в `billing/build/outputs/aar/billing-release.aar`.
+
+Для сборки sample-приложения из checkout SDK используйте `implementation(project(":billing"))`.
 
 ### 2.2. Видимость пакета
 

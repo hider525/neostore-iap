@@ -3,8 +3,12 @@ plugins {
     id("maven-publish")
 }
 
-group = "com.neostudio"
-version = "1.0.0"
+val publicationGroup = providers.environmentVariable("GROUP").orElse("com.github.hider525")
+val publicationArtifact = providers.environmentVariable("ARTIFACT").orElse("neostore-iap")
+val publicationVersion = providers.environmentVariable("VERSION").orElse("0.1")
+
+group = publicationGroup.get()
+version = publicationVersion.get()
 
 android {
     namespace = "com.neostudio.billing"
@@ -45,8 +49,8 @@ afterEvaluate {
         publications {
             create<MavenPublication>("release") {
                 from(components["release"])
-                groupId = "com.neostudio"
-                artifactId = "neostore-billing"
+                groupId = publicationGroup.get()
+                artifactId = publicationArtifact.get()
                 version = project.version.toString()
             }
         }
